@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="15dp"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:scaleType="centerCrop"
+            android:id="@+id/main_iv"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:background="#80000000"
+            />
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|center"
+            android:textSize="12sp"
+          android:text="@string/playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/playlistName_tv"
+            android:textStyle="bold"
+            android:text="@string/emotional_well_being_healing_practices_for_children"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/playlistCount_tv"
+
+            android:layout_marginTop="30dp"
+            android:text="@string/_32_video_series"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
